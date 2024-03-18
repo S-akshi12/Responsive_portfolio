@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<!---Box Icons Links-->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"> -->
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+
+    <!--  Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>S</span>akshi</a>
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+
+        </ul>
+        <div class="menu-btn">
+            <span>INTRO</span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div id="projects">
+        <h2>Projects</h2>
+        <div class="project" onclick="toggleDetails('project1')">
+            <h3>Project 1</h3><br>
+            <p><b>E-Commerce Website</b><br>
+                <b>2023</b> <br>
+                Revolutionizing Online Shopping: This E-Commerce
+                website represents a fusion of sleek design and robust
+                functionality. Crafted with expertise in web development,
+                it delivers a user-centric platform, optimizing the online
+                shopping experience and driving conversion rates
+            </p>
+        </div>
+        <div class="project" onclick="toggleDetails('project2')">
+            <h3>Project 2</h3>
+            <p><b>Crime Rate Prediction</b><br>
+                <b>2022</b><br>
+                Accomplished a comprehensive project in Crime Rate
+                Prediction utilizing a machine learning model. Leveraged
+                data analysis and predictive modeling techniques to
+                develop an effective solution for forecasting crime rates.
+                Proficiently implemented algorithms and statistical
+                analysis to enhance predictive accuracy
+            </p>
+        </div>
+        <div class="project" onclick="toggleDetails('project2')">
+            <h3>Project 3</h3>
+            <p><b>Amazon Clone Website</b><br>
+                <b>2022</b><br>
+                Successfully conceived and crafted an Amazon Clone, a
+                web application that emulates the e-commerce giant's
+                functionalities. This project showcases my proficiency in
+                full-stack web development, UI/UX design, and database
+                management
+            </p>
+        </div>
+    </div
+    >
+
+    <section id="project-details" class="hidden">
+        <button onclick="toggleDetails()">Close</button>
+        <h2 id="project-title"></h2>
+        <p id="project-description"></p>
+    </section>
+</body>
+</html>
